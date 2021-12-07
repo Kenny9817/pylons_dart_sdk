@@ -1,5 +1,6 @@
 import 'package:fixnum/fixnum.dart';
 import 'package:pylons_sdk/pylons_sdk.dart';
+import 'package:pylons_sdk/src/generated/pylons/google_iap_order.pb.dart';
 
 var MOCK_COOKBOOK = '''{
   "creator": "pylo1akzpu26f36pgxr636uch8evdtdjepu93v5y9s2",
@@ -52,6 +53,8 @@ const String MOCK_HOST = 'example';
 const String MOCK_ERR_ = 'example';
 const String MOCK_USERNAME = 'Jawad';
 const String MOCK_ERR_CODE = 'Something went wrong';
+const String MOCK_PURCHASE_TOKEN = 'Purchase token';
+const String MOCK_PRODUCT_ID = 'productId';
 
 
 
@@ -76,3 +79,11 @@ Item MOCK_ITEM = Item(
   longs: [],
   strings: [],
 );
+
+
+GoogleInAppPurchaseOrder  MOCK_ORDER_ITEM = GoogleInAppPurchaseOrder(
+    creator: MOCK_OWNER,
+    productID:MOCK_PRODUCT_ID,
+    purchaseToken: MOCK_PURCHASE_TOKEN
+);
+
